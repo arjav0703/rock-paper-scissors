@@ -6,50 +6,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" 
           content="width=device-width, initial-scale=1.0">
-    <link href=
-"https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" 
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" 
           rel="stylesheet">
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-900 text-gray-200">
     
-    <div
-        class="game-container border-yellow-500 max-w-md 
-               mx-auto text-center bg-gray-100 rounded-lg 
-               shadow-md border-2 border-yellow-500 p-8 mt-20">
-        <h1 class="text-3xl font-bold mb-4">
+    <div class="game-container border-yellow-500 max-w-lg 
+                mx-auto text-center bg-gray-800 rounded-lg 
+                shadow-xl border-4 border-yellow-500 p-10 mt-20">
+        <h1 class="text-4xl font-extrabold text-yellow-400 mb-6">
               Rock Paper Scissors
           </h1>
-        <div class="button-container">
-            <button class="btn bg-blue-500 text-white 
-                           font-bold px-4 py-2 rounded mr-2" id="rock">
+        <div class="button-container mb-6">
+            <button class="btn bg-gradient-to-r from-blue-500 to-indigo-600 text-white 
+                           font-bold px-6 py-3 rounded-xl mr-4 transition-transform transform hover:scale-105" 
+                    id="rock">
                   Rock
               </button>
-            <button class="btn bg-blue-500 text-white 
-                           font-bold px-4 py-2 rounded mr-2" id="paper">
+            <button class="btn bg-gradient-to-r from-blue-500 to-indigo-600 text-white 
+                           font-bold px-6 py-3 rounded-xl mr-4 transition-transform transform hover:scale-105" 
+                    id="paper">
                   Paper
               </button>
-            <button class="btn bg-blue-500 text-white 
-                           font-bold px-4 py-2 rounded" id="scissors">
+            <button class="btn bg-gradient-to-r from-blue-500 to-indigo-600 text-white 
+                           font-bold px-6 py-3 rounded-xl transition-transform transform hover:scale-105" 
+                    id="scissors">
                   Scissors
               </button>
         </div>
-        <div class="result-container flex flex-col justify-center mt-10">
-            <p class="font-bold">
-                  You: <span id="playerResponse"></span>
+        <div class="result-container flex flex-col justify-center mt-8">
+            <p class="font-semibold text-lg">
+                  You: <span id="playerResponse" class="text-yellow-400">-</span>
               </p>
-            <p class="font-bold">
-                  Computer: <span id="computerResponse"></span>
+            <p class="font-semibold text-lg">
+                  Computer: <span id="computerResponse" class="text-yellow-400">-</span>
               </p>
-            <p class="font-bold">
-                  Your Score: <span id="playerScore">0</span>
+            <p class="font-semibold text-lg">
+                  Your Score: <span id="playerScore" class="text-yellow-400">0</span>
               </p>
-            <p class="font-bold">
-                  Computer's Score: <span id="computerScore">0</span>
+            <p class="font-semibold text-lg">
+                  Computer's Score: <span id="computerScore" class="text-yellow-400">0</span>
               </p>
-            <p class="result-text" id="result"></p>
+            <p class="result-text text-xl font-semibold text-green-400 mt-4" id="result">
+                - 
+            </p>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 
